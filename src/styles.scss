@@ -1,1 +1,134 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%;}
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+.main-yellow {
+    background-color: #f2ec26 !important;
+  }
+
+  .main-yellow-color {
+    color: #f2ec26 ;
+  }
+
+.main-blue {
+    background-color: #3774bc;
+}
+
+.main-blue-color {
+    color: #3774bc;
+}
+
+
+  // Sizes
+  .fullHeight{
+      height: 100%;
+  }
+  
+  .fullWidth{
+      width: 100%;
+  }
+  
+  .halfHeight{
+      height: 50%;
+  }
+  
+  .halfWidth{
+      height: 50%;
+  }
+
+  .height80{
+    height: 80%;
+}
+  // Flex
+  .flex{
+      display: flex;
+  }
+  
+  .flex1{
+      flex: 1;
+  }
+  
+  .wrap{
+      flex-wrap: wrap;
+  }
+  
+  .column{
+      flex-direction: column !important;
+  }
+
+  .row{
+    flex-direction: row !important;
+}
+  
+  .aic{
+      align-items: center;
+  }
+
+  .textCenter{
+      text-align: center;
+  }
+  .center-center{
+      justify-content: center;
+      align-items: center;
+  }
+  
+  .spacebetween{
+      justify-content: space-between;
+  }
+
+  .spacearound{
+    justify-content: space-around;
+  }
+  
+  // Gaps
+  .gap05em{
+      gap: 0.5em;
+  }
+  
+  .gap1em{
+      gap: 1em;
+  }
+  
+  .gap2em{
+      gap: 2em;
+  }
+  
+  .gap3em{
+      gap: 3em;
+  }
+  
+  .gap4em{
+      gap: 4em;
+  }
+  
+  // Margin
+  .mt0{
+      margin-top: 0;
+  }
+
+  .mt2{
+    margin-top: 2em;
+}
+
+  .no-margin{
+    margin: 0;
+  }
+
+  .mt1{
+    margin-top: 1em;
+}
+  
+  // padding
+  .p0{
+      padding: 0;
+  }
+
+  .cursor{
+    cursor: pointer;
+  }
+
+  .fz8px{
+    font-size: 8px;
+  }
