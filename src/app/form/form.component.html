@@ -1,0 +1,37 @@
+<div class="main2 flex center-center">
+    <div class="form flex aic  column main-blue-color">
+        <h1>Contact Form</h1>
+        <form action="" class="width-80 column flex" [formGroup]="contactMeForm">
+            <mat-label>Name</mat-label>
+            <mat-form-field appearance="fill" >
+                <input formControlName="name" matInput placeholder="Enter Your Name" required>
+                <mat-error *ngIf="contactMeForm.get('name')?.hasError('required')">
+                    Name is required
+                </mat-error>
+            </mat-form-field>
+
+            <mat-label>Email</mat-label>
+            <mat-form-field appearance="fill">
+                <input formControlName="email" matInput placeholder="Enter Your Email" required>
+                <mat-error *ngIf="contactMeForm.get('email')?.hasError('required')">
+                    Email is required
+                </mat-error>
+                <mat-error *ngIf="contactMeForm.get('email')?.hasError('pattern')">
+                    Please enter a valid email address
+                </mat-error>
+            </mat-form-field>
+
+            <mat-label>Message</mat-label>
+            <mat-form-field appearance="fill">
+                <textarea formControlName="text" matInput placeholder="Enter Your Message" required class="text"></textarea>
+                <mat-error *ngIf="contactMeForm.get('text')?.hasError('required')">
+                    Message is required
+                </mat-error>
+            </mat-form-field>
+        </form>
+
+        <button mat-fab extended color="primary" (click)="sendEmail()">
+            Submit
+          </button>
+    </div>
+</div>

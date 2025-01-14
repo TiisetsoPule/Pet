@@ -1,0 +1,22 @@
+<div class="main main-yellow flex column center-center">
+    <h1>Our Work</h1>
+    <div class="carousel-container">
+        <!-- Large image display -->
+        <div class="large-image">
+            <img [src]="images[currentIndex].image" />
+            <!-- <div class="title">{{ images[currentIndex].title }}</div> -->
+        </div>
+
+        <!-- Navigation arrows -->
+        <div class="arrows">
+            <button (click)="navigate(-1)" [disabled]="currentIndex === 0">&#9664;</button>
+            <button (click)="navigate(1)" [disabled]="currentIndex === images.length - 1">&#9654;</button>
+        </div>
+
+        <!-- Thumbnail navigation -->
+        <div class="thumbnails">
+            <img *ngFor="let img of images; let i = index" [src]="img.image" [class.selected]="i === currentIndex"
+                (click)="selectImage(i)" />
+        </div>
+    </div>
+</div>

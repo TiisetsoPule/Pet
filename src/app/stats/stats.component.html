@@ -1,0 +1,14 @@
+<div class="main flex center-center flex column">
+    <h3 class="main-blue-color">About cosmetics in numbers</h3>
+    <div class="flex row center-center gap2em">
+        <div *ngFor="let card of minicard" class="minicard flex column center-center gap1em">
+            <div class="img flex center-center fullWidth halfHeight">
+                <img class=" fullHeight" [src]="card.img" alt="">
+            </div>
+            <div class="text main-blue-color flex column center-center">
+                <b>{{card.num}}</b>
+                <b>{{card.title}}</b>
+            </div>
+        </div>
+    </div>
+</div>

@@ -9,6 +9,10 @@ import { ToolbarComponent } from './toolbar/toolbar.component';
 import { HomeComponent } from './home/home.component';
 import { InfoComponent } from './info/info.component';
 import { ServicesComponent } from './services/services.component';
+import { StatsComponent } from './stats/stats.component';
+import { GalleryComponent } from './gallery/gallery.component';
+import { FormComponent } from './form/form.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -16,13 +20,17 @@ import { ServicesComponent } from './services/services.component';
     ToolbarComponent,
     HomeComponent,
     InfoComponent,
-    ServicesComponent
+    ServicesComponent,
+    StatsComponent,
+    GalleryComponent,
+    FormComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MaterialModule
+    MaterialModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
