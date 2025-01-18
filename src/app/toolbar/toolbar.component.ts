@@ -7,6 +7,6 @@ import { Component } from '@angular/core';
 })
 export class ToolbarComponent {
 
-  menuItems = ['Services', 'Refrences', 'About us', 'Contact Us']
+  menuItems = ['Services', 'References', 'Our Work', 'Contact Us']
 
 }

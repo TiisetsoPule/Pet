@@ -8,8 +8,11 @@ import { Component } from '@angular/core';
 export class GalleryComponent {
   images = [
     {image: '../../assets/pictures/haircuting-process-small-dog-sits-table-dog-with-professional.png'},
+    // {image: "../../assets/pictures/cat2.jpg"},
     {image: '../../assets/pictures/washing-process-small-dog-bathroom-dog-washed-by-professional.png'},
+    // {image: "../../assets/pictures/cat3.jpg"},
     {image: '../../assets/pictures/yorkshire-terrier-getting-procedure-groomer-salon-cropped-photo-little-dog-yorkshire-terrier-puppy-getting-haircut.png'},
+    // {image: "../../assets/pictures/cat4.jpg"},
     {image: '../../assets/pictures/haircuting-process-small-dog-sits-table-dog-with-professional.png'}
   ]
 

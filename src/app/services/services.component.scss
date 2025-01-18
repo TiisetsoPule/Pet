@@ -1,5 +1,5 @@
 .bg1{
-    height: calc(100vh / 2);
+    height: calc(100vh - 30%);
     background-color: #F5F5F5;
 }
 
@@ -18,7 +18,7 @@
 }
 
 .minicard{
-    height: 200px;
+    height: 250px;
     width: 180px;
     background-color: yellow;
     border-radius: 8px;
@@ -34,7 +34,7 @@
     height: 50px;
     z-index: 1;
     position: absolute;
-    bottom: 170px;
+    bottom: 220px;
     ;
 }
 
